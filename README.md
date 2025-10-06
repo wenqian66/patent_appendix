@@ -23,22 +23,26 @@ July18/
 │
 ├── data/                                 
 ├──  output/
-    ├── eq6gamma
-    ├── 7_t3FirmSummaryStats
-    ├── eq6gamma
-├── crsp_dsi.csv                            # Input for 1firmiqr.do; product_crsp.do     
-├── crsp_dsf.csv                            # Input for 1firmiqr.do; product_crsp.do  
-├── firmiqr.dta                             # Output for 1firmiqr.do; Input for 4FilterReturnsCreateFirmMeasures.do
+│   ├── eq6gamma
+│   ├── 7_t3FirmSummaryStats
+│   ├── t1
+├── crsp_dsi.csv                            # Input for 1firmiqr.do; 2product_crsp.do     
+├── crsp_dsf.csv                            # Input for 1firmiqr.do; 2product_crsp.do  
+├── firmiqr.dta                             # Output from 1firmiqr.do; Input for 4FilterReturnsCreateFirmMeasures.do and 6_t1PatentValueCites.do
 ├── newproduct_crsp_ccm.csv                 # Input for 2newproduct.do 
 ├── newproduct_GPT_results_manual_cleaned.csv # Input for 2newproduct.do
-├── newproduct_base.dta                     # Output for 2newproduct.do
-├── price_k.csv                             #  for 1firmiqr.do  
-├── gdp.csv
-├── awi.csv
-├── comp_funda.csv
-├── linktable.dta
-├── CompustatData.dta
+├── newproduct_base.dta                     # Output from 2newproduct.do; input for 2product_crsp.do
+├── product.dta                             # Output from 2product_crsp.do; Input for 4FilterReturnsCreateFirmMeasures.do and 6_t1PatentValueCites.do
+├── price_k.csv                             # Input for 3CompustatData.do  
+├── gdp.csv                                 # Input for 3CompustatData.do  
+├── awi.csv                                 # Input for 3CompustatData.do  
+├── comp_funda.csv                          # Input for 3CompustatData.do  
+├── linktable.dta                           # Input for 3CompustatData.do  
+├── CompustatData.dta                       # Output from 3CompustatData.do  
 ├── tfp.dta
-├── Comp_data.dta
+├── firm_Af.dta                             # Output from 4FilterReturnsCreateFirmMeasures.do
+├── Comp_data.dta                           # Output from 3tfp; Input for 5CreateFirmSample.do
+├── CPIAUCNS.csv                            # Input for 5CreateFirmSample.do
+├── firm_data.dta                           # Output from 5CreateFirmSample.do
                             
 ```
