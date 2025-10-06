@@ -85,7 +85,7 @@ Aug1/
 # 3. Regression
 
 ```text
-Aug1/
+Aug14/
 ├── code/
 │   ├── t1individual_level
 │   ├── t2firm_year.do
@@ -96,9 +96,41 @@ Aug1/
 │   ├── 2agg_summary.tex                   # Descriptive Statistics (Firm-Year, 1997–2021): Product vs Patent
 │   ├── t3_1997_2021.tex                   # same with regression 2 #3 
 │   ├── t4.tex                             # regression using 1997-2021 patent value(TABLE 4; Eq12)
-├── data/...                               # same with previous
+├── data/...                               # same as previous
 ```
 
-# 3. Regression
+# 4. R&D response to rival-product shocks + Leader/Laggard tags
+```text
+Sep16/
+├── r1_interaction/                     
+│   ├── 1a_dlogrd_laggard.do            
+│   ├── 1a_dlogrd_leader.do             
+│   ├── 1b_rdintensity_laggard.do       
+│   └── 1b_rdintensity_leader.do
+│        
+├── r2_interaction/                     
+│   ├── 2a_3y_inv_rate_laggard.do       # 3-year tag laggard & CAPX/AT
+│   ├── 2a_3y_inv_rate_leader.do        # 3-year tag leader & CAPX/AT
+│   ├── 2a_rtfp_inv_rate_laggard.do     # RTFP-based tag laggard & CAPX/AT
+│   ├── 2a_rtfp_inv_rate_leader.do      # RTFP-based tag leader & CAPX/AT
+│   ├── 2b_3y_cap_growth_laggard.do     # Δ ln(PPENT)
+│   ├── 2b_3y_cap_growth_leader.do      
+│   ├── 2b_rtfp_cap_growth_laggard.do   
+│   ├── 2b_rtfp_cap_growth_leader.do    
+│   ├── 2c_3y_cap_deepen_laggard.do     # Δ ln(PPENT / EMP)
+│   ├── 2c_3y_cap_deepen_leader.do      
+│   ├── 2c_rtfp_cap_deepen_laggard.do   
+│   └── 2c_rtfp_cap_deepen_leader.do    
+├── r1.pdf/
+├── r2.tex/
+```
+**Step 1** 
+* Dependent variable:
+  Δ ln(XRD + 1) (primary)
+  XRD / AT (robustness)
 
+**Step 2** 
+* Investment rate: CAPX / AT
+* Capital growth: Δ ln(PPENT)
+* Capital deepening: Δ ln(PPENT / EMP)
 
