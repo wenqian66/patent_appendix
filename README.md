@@ -1,5 +1,5 @@
-# patent_appendix
-# 1. Apply KPSS2017 code to patent data 
+# product_appendix
+# 1. Apply KPSS2017 code to product data 
 1997-2021
 ```text
 July18/
