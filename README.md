@@ -12,7 +12,7 @@ July18/
 │   ├── 5CreateFirmSample.do                 # merges the patent measure with Compustat data and creates the needed variables to run the firm-level regressions*
 │   ├── 6_t1PatentValueCites.do              # TABLE I
 │   ├── 7_t3FirmSummaryStats.do              # TABLE III; descriptive statistics
-│   ├── 8_t4aFirmProfitsRegressionSM.do      # TABLE IIII: 
+│   ├── 8_t4aFirmProfitsRegressionSM.do      # TABLE IIII
 │   ├── 8_t4bFirmOutputRegressionSM.do       
 │   ├── 8_t4cdFirmReallocationRegressionSM.do
 │   ├── 8_t4eFirmTFPRegressionSM.do          
@@ -26,7 +26,13 @@ July18/
     ├── eq6gamma
     ├── 7_t3FirmSummaryStats
     ├── eq6gamma
-├── price_k.csv
+├── crsp_dsi.csv                            # Input for 1firmiqr.do; product_crsp.do     
+├── crsp_dsf.csv                            # Input for 1firmiqr.do; product_crsp.do  
+├── firmiqr.dta                             # Output for 1firmiqr.do; Input for 4FilterReturnsCreateFirmMeasures.do
+├── newproduct_crsp_ccm.csv                 # Input for 2newproduct.do 
+├── newproduct_GPT_results_manual_cleaned.csv # Input for 2newproduct.do
+├── newproduct_base.dta                     # Output for 2newproduct.do
+├── price_k.csv                             #  for 1firmiqr.do  
 ├── gdp.csv
 ├── awi.csv
 ├── comp_funda.csv
