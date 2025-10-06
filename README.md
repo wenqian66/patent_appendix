@@ -157,9 +157,27 @@ Sep25/
 │   ├── convRate.do                      # Prepare Fencing label
 │        
 ├── 2panel_var/                     
- 
-├── r1.pdf/                             # Regression results from r1_interaction
-├── r2.tex/                             # Regression results from r2_interaction
-├── preprocess/... # prepare laggard & leader tag
+│   ├── 1a_panel_var.do                  # VAR with Investment-rate
+│   ├── 1b_FEVD_bar.do                   # FEVD for Investment-rate
+│   ├── 1c_peak_cumulative.do            # IRFs for Investment-rate
+│   ├── 2a_panel_dlogrd.do               # VAR with Δlog R&D
+│   ├── 2b_FEVD_bar_dlogrd.do            # FEVD for Δlog R&D
+│   ├── 2c_peak_cumulative_dlogrd.do     # IRFs for Δlog R&D
+│   ├── 3a_panel_capdeepen.do            # VAR with capital-deepening
+│   ├── 3b_FEVD_bar_capdeepen.do         # FEVD for capital-deepening
+│   ├── 3c_peak_cumulative_capdeepen.do  # IRFs for capital-deepening
+│   ├── 4a_panel_capgrowth.do            # VAR with capital-growth
+│   ├── 4b_FEVD_bar_capgrowth.do         # FEVD for capital-growth
+│   ├── 4c_peak_cumulative_capgrowth.do  # IRFs for capital-growth
+│   ├── 5a_panel_lnsale.do               # VAR with log sales
+│   ├── 5b_FEVD_bar_lnsale.do            # FEVD for log sales
+│   ├── 5c_peak_cumulative_lnsale.do     # IRFs for log sales
+│   ├── 6a_panel_oiadpsale.do            # VAR with oiadp / sales
+│   └── 6b_FEVD_bar_oiadpsale.do         # FEVD for oiadp / sales
+│   └── 6c_peak_cumulative_oiadpsale.do  # IRFs for oiadp / sales 
+
+├──                        # Regression results from r1_interaction
+├──                              # Regression results from r2_interaction
+├── preprocess/... 
 ├── data/...                            # same as previous 
 ```
