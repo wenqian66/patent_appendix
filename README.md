@@ -109,10 +109,10 @@ Sep16/
 │   └── 1b_rdintensity_leader.do
 │        
 ├── r2_interaction/                     
-│   ├── 2a_3y_inv_rate_laggard.do       # 3-year tag laggard & CAPX/AT
-│   ├── 2a_3y_inv_rate_leader.do        # 3-year tag leader & CAPX/AT
-│   ├── 2a_rtfp_inv_rate_laggard.do     # RTFP-based tag laggard & CAPX/AT
-│   ├── 2a_rtfp_inv_rate_leader.do      # RTFP-based tag leader & CAPX/AT
+│   ├── 2a_3y_inv_rate_laggard.do       # 3-year laggard tag & CAPX/AT
+│   ├── 2a_3y_inv_rate_leader.do        # 3-year leader tag & CAPX/AT
+│   ├── 2a_rtfp_inv_rate_laggard.do     # RTFP-based laggard tag & CAPX/AT
+│   ├── 2a_rtfp_inv_rate_leader.do      # RTFP-based leader tag & CAPX/AT
 │   ├── 2b_3y_cap_growth_laggard.do     # Δ ln(PPENT)
 │   ├── 2b_3y_cap_growth_leader.do      
 │   ├── 2b_rtfp_cap_growth_laggard.do   
@@ -121,8 +121,10 @@ Sep16/
 │   ├── 2c_3y_cap_deepen_leader.do      
 │   ├── 2c_rtfp_cap_deepen_laggard.do   
 │   └── 2c_rtfp_cap_deepen_leader.do    
-├── r1.pdf/
-├── r2.tex/
+├── r1.pdf/                             # Regression results from r1_interaction
+├── r2.tex/                             # Regression results from r2_interaction
+├── preprocess/... # prepare laggard & leader tag
+├── data/...                            # same as previous 
 ```
 **Step 1** 
 * Dependent variable:
@@ -134,3 +136,30 @@ Sep16/
 * Capital growth: Δ ln(PPENT)
 * Capital deepening: Δ ln(PPENT / EMP)
 
+# 5. Fencing & Panel VAR Robustness
+```text
+Sep25/
+├── 1patent_fencingn/                     
+│   ├── value/                          
+│   │   ├── 1invrate_cntf.do             # Investment-rate regression (count-based fencing)
+│   │   ├── 1invrate_valuef.do           # Investment-rate regression (value-based fencing)
+│   │   ├── 2dlogrd_cntf.do              # Δlog R&D (count-based)
+│   │   ├── 2dlogrd_valuef.do            # Δlog R&D (value-based)
+│   │   ├── 3capdeepen_cntf.do           # Capital-deepening regression (count-based)
+│   │   ├── 3capdeepen_valuef.do         # Capital-deepening regression (value-based)
+│   │   ├── 4capgrowth_cntf.do           # Capital-growth regression (count-based)
+│   │   ├── 4capgrowth_valuef.do         # Capital-growth regression (value-based)
+│   │   ├── 5dlnsale_cntf.do             # Δlog Sales (count-based)
+│   │   ├── 5dlnsale_valuef.do           # Δlog Sales (value-based)
+│   │   ├── 6oiadpsale_cntf.do           # oiadp / Sales (count-based)
+│   │   └── 6oiadpsale_valuef.do         # oiadp / Sales (value-based)
+│   │
+│   ├── convRate.do                      # Prepare Fencing label
+│        
+├── 2panel_var/                     
+ 
+├── r1.pdf/                             # Regression results from r1_interaction
+├── r2.tex/                             # Regression results from r2_interaction
+├── preprocess/... # prepare laggard & leader tag
+├── data/...                            # same as previous 
+```
