@@ -1,5 +1,5 @@
 # patent_appendix
-# use patent data to the KPSS2017 code
+# Apply patent data to the KPSS2017 code
 ```text
 July18/
 ├── code/                                 
