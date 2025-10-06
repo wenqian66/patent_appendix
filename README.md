@@ -1,6 +1,6 @@
 # patent_appendix
 # use patent data to the KPSS2017 code
-
+```text
 July18/
 ├── code/                                 
 │   ├── 1firmiqr.do                          # hfirmiqr = (q3(ret-vwretd)-q1(ret-vwretd))/2
@@ -17,9 +17,22 @@ July18/
 │   ├── 8_t4cdFirmReallocationRegressionSM.do
 │   ├── 8_t4eFirmTFPRegressionSM.do          
 │   │
-│   ├── cluster2.ado                         # Two-way clustering ado (firm × year)
-│   ├── eq6delta.do                          # Auxiliary Δ-equation regression
-│   └── sic.dta                              # SIC-to-industry mapping data file
+│   ├── cluster2.ado                         
+│   ├── eq6delta.do                          #regression in footnote13
+│   └── sic.dta                              
 │
-├── data/                                 # Raw and intermediate datasets (Compustat, CRSP, patents)
-└── output/                               # Regression results, tables, and figures
+├── data/                                 
+├──  output/
+    ├── eq6gamma
+    ├── 7_t3FirmSummaryStats
+    ├── eq6gamma
+├── price_k.csv
+├── gdp.csv
+├── awi.csv
+├── comp_funda.csv
+├── linktable.dta
+├── CompustatData.dta
+├── tfp.dta
+├── Comp_data.dta
+                            
+```
