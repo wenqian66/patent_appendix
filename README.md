@@ -1,5 +1,5 @@
 # patent_appendix
-# Apply KPSS2017 code to patent data 
+# 1. Apply KPSS2017 code to patent data 
 1997-2021
 ```text
 July18/
@@ -47,3 +47,9 @@ July18/
 ├── firm_data.dta                           # Output from 5CreateFirmSample.do
                             
 ```
+
+# 2. Regression
+
+## 1) Equation 12: theta_ft, theta_i/ft using product_value
+## 2) Equation 12: two theta_ft using product_value and patent_value
+## 3) 4 vars
