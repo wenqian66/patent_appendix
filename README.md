@@ -136,10 +136,11 @@ Sep16/
 * Capital growth: Δ ln(PPENT)
 * Capital deepening: Δ ln(PPENT / EMP)
 
+
 # 5. Fencing & Panel VAR Robustness
 ```text
 Sep25/
-├── 1patent_fencingn/                     
+├── 1patent_fencing/                     
 │   ├── value/                          
 │   │   ├── 1invrate_cntf.do             # Investment-rate regression (count-based fencing)
 │   │   ├── 1invrate_valuef.do           # Investment-rate regression (value-based fencing)
@@ -173,11 +174,22 @@ Sep25/
 │   ├── 5b_FEVD_bar_lnsale.do            # FEVD for log sales
 │   ├── 5c_peak_cumulative_lnsale.do     # IRFs for log sales
 │   ├── 6a_panel_oiadpsale.do            # VAR with oiadp / sales
-│   └── 6b_FEVD_bar_oiadpsale.do         # FEVD for oiadp / sales
+│   ├── 6b_FEVD_bar_oiadpsale.do         # FEVD for oiadp / sales
 │   └── 6c_peak_cumulative_oiadpsale.do  # IRFs for oiadp / sales 
-
-├──                        # Regression results from r1_interaction
-├──                              # Regression results from r2_interaction
+├── data/
+│   ├── 2a/
+│   ├── ── 2airf_panels.pdf               #all IRF (6)
+│   ├── ── {irf_panel}_...                #seperate irf figures
+│   ├── 2b/
+│   ├── ── 2b_fevd                        #all FEVD bar charts(6)
+│   ├── ── {fevd_pat}_...
+│   ├── 2c/
+│   ├── ── 2c_irf_peak.xlsx               #Table of peak responses and cumulative sums (horizons h = 1, . . . , 8)
+│   ├── ── ...
+│   ├── table1/
+│   ├── ── t1                             #all regression results(12) from 1patent_fencing
+│   ├── ── ...
+├── patent_preprocess                      
 ├── preprocess/... 
 ├── data/...                            # same as previous 
 ```
